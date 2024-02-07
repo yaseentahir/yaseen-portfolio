@@ -1,0 +1,234 @@
+.icon-menu:hover {
+  border-color: #28e98c;
+}
+.icon-menu {
+  position: absolute;
+  right: 68px;
+  top: 60px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #575757;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #1f1f1f;
+  z-index: 99;
+}
+.icon-menu span {
+  width: 20px;
+  display: block;
+  height: 2px;
+  background: #fff;
+  transition: 0.3s;
+}
+.icon-menu:hover span {
+  background: #28e98c;
+}
+@media (max-width: 2000px) {
+  .menu {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.menu {
+  flex-direction: column;
+  border: 1px solid #575757;
+  border-radius: 30px;
+  position: fixed;
+  right: 68px;
+  text-align: center;
+  gap: 20px;
+  padding: 24px 0;
+  background: #1f1f1f;
+  z-index: 20;
+}
+.d-flex {
+  display: flex !important;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu li a.active,
+.menu li a:hover,
+.menu li .scroll-to.active,
+.menu li .scroll-to:hover {
+  color: #28e98c;
+}
+.menu li .scroll-to,
+.menu li a {
+  display: block;
+  position: relative;
+  /* padding: 10px 10px; */
+  width: 55px;
+  transition: 0.3s;
+  color: #999999;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+.menu li .scroll-to span,
+.menu li a span {
+  position: absolute;
+  transition: 0.3s;
+  font-size: 12px;
+  background: #404042;
+  right: 100%;
+  color: #fff;
+  display: block;
+  padding: 3px 8px;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+}
+.menu li .scroll-to i,
+.menu li a i {
+  font-size: 20px;
+  display: block;
+}
+.responsive-sidebar-menu.active {
+  opacity: 1;
+  visibility: visible;
+}
+.responsive-sidebar-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s;
+}
+.responsive-sidebar-menu .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #565656;
+  opacity: 0.5;
+}
+.responsive-sidebar-menu.active .sidebar-menu-inner {
+  margin-right: 0;
+}
+.responsive-sidebar-menu .sidebar-menu-inner {
+  max-width: 345px;
+  width: 100%;
+  margin-left: auto;
+  background: #191919;
+  height: 100%;
+  overflow-x: hidden;
+  padding-top: 50px;
+  /* margin-right: -250px; */
+  transition: 0.3s;
+}
+.responsive-sidebar-menu .sidebar-menu-inner .menu-wrap {
+  width: 46%;
+  margin: auto;
+}
+.responsive-sidebar-menu .sidebar-menu-inner .menu-wrap .menu {
+  position: relative;
+  right: auto;
+  left: 0;
+  top: 0;
+  transform: translateY(0);
+  background: none;
+  border-radius: 0;
+  border: none;
+  margin-bottom: 30px;
+}
+.responsive-sidebar-menu .sidebar-menu-inner .menu-wrap .menu li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.menu li a.active,
+.menu li a:hover,
+.menu li .scroll-to.active,
+.menu li .scroll-to:hover {
+  color: #28e98c;
+}
+.menu li .scroll-to,
+.menu li a {
+  position: relative;
+  /* padding: 10px 10px; */
+  width: 55px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.responsive-sidebar-menu .sidebar-menu-inner .menu-wrap .menu li a.active span {
+  color: #fff;
+}
+
+.responsive-sidebar-menu .sidebar-menu-inner .menu-wrap .menu li a span {
+  position: relative;
+  right: 0;
+  opacity: 1;
+  visibility: visible;
+  color: #999999;
+  background: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+.menu li .scroll-to span,
+.menu li a span {
+  position: absolute;
+  transition: 0.3s;
+  font-size: 12px;
+  background: #404042;
+  right: 100%;
+  color: #fff;
+  display: block;
+  padding: 3px 8px;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+}
+.menu li a:hover span {
+  color: #fff !important;
+}
+.responsive-sidebar-menu .sidebar-menu-inner .menu-wrap {
+  width: 46%;
+  margin: auto;
+}
+.responsive-sidebar-menu .sidebar-menu-inner .menu-wrap p {
+  font-size: 18px;
+  color: #999999;
+}
+.responsive-sidebar-menu .sidebar-menu-inner .sidebar-social {
+  width: 46%;
+  margin: auto;
+}
+.responsive-sidebar-menu .sidebar-menu-inner .sidebar-social ul {
+  gap: 15px;
+}
+.align-items-center {
+  align-items: center !important;
+}
+.d-flex {
+  display: flex !important;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.responsive-sidebar-menu .sidebar-menu-inner .sidebar-social ul li a {
+  color: #999999;
+  transition: 0.3s;
+  font-size: 16px;
+}
+.responsive-sidebar-menu .sidebar-menu-inner .sidebar-social p {
+  color: #999999;
+}
