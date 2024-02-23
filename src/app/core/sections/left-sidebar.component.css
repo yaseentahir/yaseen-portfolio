@@ -20,29 +20,7 @@
 .left-sidebar .sidebar-header {
   margin-bottom: 65px;
 }
-.align-items-center {
-  align-items: center !important;
-}
-.justify-content-between {
-  justify-content: space-between !important;
-}
 
-.d-flex {
-  display: flex !important;
-}
-.align-items-center {
-  align-items: center !important;
-}
-.justify-content-center {
-  justify-content: center !important;
-}
-
-.flex-wrap {
-  flex-wrap: wrap !important;
-}
-.d-flex {
-  display: flex !important;
-}
 .left-sidebar .sidebar-header .designation {
   max-width: 110px;
   text-align: right;
@@ -86,6 +64,12 @@
   font-size: 20px;
   transition: 0.3s;
 }
+.left-sidebar .social-profile li a:hover {
+  /* color: var(--primary_color);
+    border-color: var(--primary_color); */
+  color: #28e98c;
+  border-color: #28e98c;
+}
 .lab {
   font-family: "Line Awesome Brands";
 }
@@ -110,6 +94,11 @@
   border: 2px solid #28e98c;
   text-decoration: none;
   /* border: 2px solid var(--primary_color); */
+}
+.theme-btn:hover {
+  background: none;
+  color: #28e98c;
+  /* color: var(--primary_color); */
 }
 .theme-btn i {
   font-size: 24px;
