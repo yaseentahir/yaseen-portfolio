@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { FooterComponent } from './core/layout/footer.component';
 import { HeaderComponent } from './core/layout/header.component';
-import { LeftSidebar } from './core/sections/left-sidebar.component';
+import { LeftSidebar } from './core/layout/left-sidebar.component';
 import { AppComponent } from './app.component';
 
 @NgModule({
