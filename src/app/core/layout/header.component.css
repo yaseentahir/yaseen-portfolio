@@ -29,12 +29,7 @@
 .icon-menu:hover span {
   background: #28e98c;
 }
-@media (max-width: 2000px) {
-  .menu {
-    top: 50%;
-    transform: translateY(-50%);
-  }
-}
+
 .menu {
   flex-direction: column;
   border: 1px solid #575757;
@@ -118,9 +113,7 @@ a {
   background: #565656;
   opacity: 0.5;
 }
-.responsive-sidebar-menu.active .sidebar-menu-inner {
-  margin-right: 0;
-}
+
 .responsive-sidebar-menu .sidebar-menu-inner {
   max-width: 345px;
   width: 100%;
@@ -129,8 +122,11 @@ a {
   height: 100%;
   overflow-x: hidden;
   padding-top: 50px;
-  /* margin-right: -250px; */
+  margin-right: -250px;
   transition: 0.3s;
+}
+.responsive-sidebar-menu.active .sidebar-menu-inner {
+  margin-right: 0;
 }
 .responsive-sidebar-menu .sidebar-menu-inner .menu-wrap {
   width: 46%;
@@ -231,4 +227,23 @@ ul {
 }
 .responsive-sidebar-menu .sidebar-menu-inner .sidebar-social p {
   color: #999999;
+}
+@media (max-width: 2000px) {
+  .menu {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 1220px) {
+  .menu {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .icon-menu {
+    right: 30px;
+    top: 30px;
+  }
 }
