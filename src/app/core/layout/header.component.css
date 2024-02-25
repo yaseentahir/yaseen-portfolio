@@ -236,7 +236,7 @@ ul {
 }
 
 @media (max-width: 1220px) {
-  .menu {
+  #resp-menu.menu {
     display: none !important;
   }
 }
