@@ -147,6 +147,7 @@ ul {
 @media (max-width: 1220px) {
   .left-sidebar {
     position: relative;
+    width: 80%;
     max-width: 767px;
     left: 0;
     margin: auto;
