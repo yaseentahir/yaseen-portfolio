@@ -102,3 +102,9 @@ img {
     transform: rotate(360deg);
   }
 }
+@media (max-width: 787px) {
+  .hero-section .hero-content h1 {
+    font-size: 58px;
+    line-height: 1.3;
+  }
+}
