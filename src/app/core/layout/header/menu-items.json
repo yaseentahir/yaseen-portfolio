@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "name": "Home",
+      "link": "#home",
+      "iconClass": "las la-home"
+    },
+    {
+      "name": "About",
+      "link": "#about",
+      "iconClass": "lar la-user"
+    },
+    {
+      "name": "Resume",
+      "link": "#resume",
+      "iconClass": "las la-briefcase"
+    },
+    {
+      "name": "Services",
+      "link": "#services",
+      "iconClass": "las la-stream"
+    },
+    {
+      "name": "Skills",
+      "link": "#skills",
+      "iconClass": "las la-shapes"
+    },
+    {
+      "name": "Portfolios",
+      "link": "#portfolio",
+      "iconClass": "las la-grip-vertical"
+    },
+    {
+      "name": "Testimonial",
+      "link": "#testimonial",
+      "iconClass": "lar la-comment"
+    },
+    {
+      "name": "Contact",
+      "link": "#contact",
+      "iconClass": "las la-envelope"
+    }
+  ]
+}

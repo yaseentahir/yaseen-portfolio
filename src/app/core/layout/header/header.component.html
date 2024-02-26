@@ -1,0 +1,45 @@
+<header>
+  <span (click)="toggleMenu()" class="icon-menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </span>
+  <ul id="resp-menu" class="menu scroll-nav d-flex">
+    <li *ngFor="let menuItem of menuItems.items">
+      <a class="scroll-to" [href]="menuItem.link">
+        <span>{{ menuItem.name }}</span>
+        <i class="{{ menuItem.iconClass }}"></i>
+      </a>
+    </li>
+  </ul>
+  <div class="responsive-sidebar-menu" [class.active]="isActive">
+    <div (click)="toggleMenu()" class="overlay"></div>
+    <div class="sidebar-menu-inner">
+      <div class="menu-wrap">
+        <p>Menu</p>
+        <ul class="menu scroll-nav-responsive d-flex">
+          <li (click)="toggleMenu()" *ngFor="let menuItem of menuItems.items">
+            <a class="scroll-to" [href]="menuItem.link">
+              <i class="{{ menuItem.iconClass }}"></i>
+              <span>{{ menuItem.name }}</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar-social">
+        <p>Social</p>
+        <ul class="social-links d-flex align-items-center">
+          <li>
+            <a href=""><i class="lab la-twitter"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="lab la-dribbble"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="lab la-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>

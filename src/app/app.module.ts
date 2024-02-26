@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { FooterComponent } from './core/layout/footer.component';
-import { HeaderComponent } from './core/layout/header.component';
-import { LeftSidebar } from './core/layout/left-sidebar.component';
+import { CommonModule } from '@angular/common';
+import { FooterComponent } from './core/layout/footer/footer.component';
+import { HeaderComponent } from './core/layout/header/header.component';
+import { LeftSidebar } from './core/layout/leftSidebar/left-sidebar.component';
 import { AppComponent } from './app.component';
 import { HeroSection } from './core/sections/hero/hero-section.component';
 
@@ -15,6 +15,7 @@ import { HeroSection } from './core/sections/hero/hero-section.component';
     HeaderComponent,
     LeftSidebar,
     HeroSection,
+    CommonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
