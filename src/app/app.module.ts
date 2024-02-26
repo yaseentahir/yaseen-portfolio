@@ -6,6 +6,7 @@ import { HeaderComponent } from './core/layout/header/header.component';
 import { LeftSidebar } from './core/layout/leftSidebar/left-sidebar.component';
 import { AppComponent } from './app.component';
 import { HeroSection } from './core/sections/hero/hero-section.component';
+import { AboutSection } from './core/sections/about/about-section.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,6 +17,7 @@ import { HeroSection } from './core/sections/hero/hero-section.component';
     LeftSidebar,
     HeroSection,
     CommonModule,
+    AboutSection,
   ],
   providers: [],
   bootstrap: [AppComponent],
