@@ -125,6 +125,14 @@ ul {
   .left-sidebar .social-profile {
     margin-bottom: 30px;
   }
+  .left-sidebar > img.me {
+    width: 100%;
+    max-width: 250px;
+    height: 211px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 46px;
+  }
 }
 @media (max-width: 1555px) {
   .left-sidebar {
